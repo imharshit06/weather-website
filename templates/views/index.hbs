@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="/img/weather.png">
+        <title>
+            hello exprees
+        </title>
+    </head>
+   <body>
+    <div class="main-content">
+        {{>headers}}
+
+
+        <p>Use this site to get your weather!</p>
+        <form>
+            <input placeholder="location">
+            <button>Search</button>
+        </form>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
