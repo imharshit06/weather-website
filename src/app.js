@@ -5,7 +5,7 @@ const forecast=require('./utils/forecast')
 const express=require('express')
 const hbs=require('hbs')
 const app=express()
-
+const port=process.env.PORT ||3000
 const pathhtml=path.join(__dirname,'../public')
 const pathview=path.join(__dirname,'../templates/views')
 const partialspath=path.join(__dirname,'../templates/partials')
@@ -103,7 +103,7 @@ app.get('/weather',(req,res)=>{
         })
     })
         
-app.listen(3000,()=>{
-    console.log('server is up');
+app.listen(port,()=>{
+    console.log('server is up at '+port);
     
 })
