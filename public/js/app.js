@@ -1,5 +1,4 @@
 
-
 const weather=document.querySelector('form')
 
 
