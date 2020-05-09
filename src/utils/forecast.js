@@ -8,7 +8,7 @@ const forecast=(latitude,longitude,callback)=>{
             } else if (body.error) {
                 callback('Unable to find location', undefined)
             } else {
-                callback(undefined,body.current.weather_descriptions[0]+' there is currently '+body.current.temperature+' degree out there.'+'there is a '+body.current.precip+' % chances of rain')
+                callback(undefined,body.current.weather_descriptions[0]+' there is currently '+body.current.temperature+' degree out there.'+'there is a '+body.current.precip+' % chances of rain.'+'visibility is up to '+body.current.visibility+'UV ibdex is '+body.current.uv_index)
             }
         })
     }
